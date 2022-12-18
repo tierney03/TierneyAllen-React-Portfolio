@@ -1,3 +1,4 @@
+import React from "react";
 import Header from "./components/header/header.jsx";
 import Nav from "./components/nav/nav.jsx";
 import About from "./components/about/about.jsx";
@@ -8,7 +9,7 @@ import Footer from "./components/footer/footer.jsx";
 
 const App = () => {
   return (
-    <div>
+    <>
       <Header />
       <Nav />
       <About />
@@ -16,7 +17,7 @@ const App = () => {
       <Portfolio />
       <Contact />
       <Footer />
-    </div>
+    </>
   );
 };
 
