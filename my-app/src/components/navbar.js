@@ -26,4 +26,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default Navbar;
