@@ -4,7 +4,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-image: url("images/sj-objio-XFWiZTa2Ub0-unsplash.jpg");
+  background-image: url("images/resul-mentes-DbwYNr8RPbg-unsplash.jpg");
+  background-size: cover;
   background-attachment: fixed;
 }
 
@@ -19,7 +20,7 @@
   }
 }
 
-.App-header {
+/* .App-header {
   background-color: olive;
   min-height: 100vh;
   display: flex;
@@ -28,8 +29,11 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: olive;
-}
+} */
 
+.nav {
+  background-color: whitesmoke;
+}
 .App-link {
   color: #61dafb;
 }
