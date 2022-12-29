@@ -1,21 +1,21 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Footer } from "./footer";
-import { Header } from "./header";
-import { Navbar } from "./navbar";
-import { Projects } from "./projects";
-import { Skills } from "./skills";
-import { Contact } from "./contact";
+import Footer from "./components/footer";
+import Header from "./components/header";
+import Navigation from "./components/navbar";
+import Projects from "./components/projects";
+import Skills from "./components/skills";
+import Contact from "./components/contact";
 
 function App() {
   return (
     <div className="App">
-      <Footer />,
-      <Header />,
-      <Navbar />,
-      <Projects />,
-      <Skills />,
+      <Navigation />
+      <Header />
+      <Projects />
+      <Skills />
       <Contact />
+      <Footer />
     </div>
   );
 }

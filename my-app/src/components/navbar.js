@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
-function BasicExample() {
+function Navigation() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
@@ -17,7 +17,12 @@ function BasicExample() {
               <NavDropdown.Item href="#projects">Projects</NavDropdown.Item>
               <NavDropdown.Item href="#skills">Skills</NavDropdown.Item>
               <NavDropdown.Item href="#github">Github</NavDropdown.Item>
-              <NavDropdown.Item href="#resume">Resume</NavDropdown.Item>
+              <NavDropdown.Item
+                href="https://drive.google.com/file/d/1MPI1pmrpXh0Z4_EgQkJEKCkt7Wsov4zT/view?usp=sharing"
+                target="_blank"
+              >
+                Resume
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
@@ -26,4 +31,4 @@ function BasicExample() {
   );
 }
 
-export default Navbar;
+export default Navigation;
