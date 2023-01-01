@@ -50,5 +50,9 @@
 #project-cards {
   flex-wrap: nowrap;
   width: 80%;
-  align-content: center;
+  justify-content: center;
+}
+
+#footer {
+  justify-content: end;
 }

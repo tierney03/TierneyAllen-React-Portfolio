@@ -5,7 +5,7 @@ import { RiMailLine } from "react-icons/ri";
 
 function Footer() {
   return (
-    <div>
+    <div id="footer">
       <h3>
         <a href="https://github.com/tierney03" target="_blank">
           <SiGithub />
