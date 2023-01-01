@@ -13,6 +13,7 @@ function App() {
       <Navigation />
       <Header />
       <Projects />
+      const cards = [{},{},{},{}]
       <Skills />
       <Contact />
       <Footer />

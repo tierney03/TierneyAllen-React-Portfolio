@@ -46,3 +46,9 @@
     transform: rotate(360deg);
   }
 }
+
+#project-cards {
+  flex-wrap: nowrap;
+  width: 80%;
+  align-content: center;
+}

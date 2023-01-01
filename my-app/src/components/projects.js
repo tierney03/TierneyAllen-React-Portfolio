@@ -1,89 +1,30 @@
 import React, { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 
 function Projects() {
   return (
-    <div>
-      <h1>P1</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempus
-        leo vel felis fringilla imperdiet. Nullam aliquam est mi, tristique
-        accumsan sem sollicitudin in. Nunc id lorem ac metus imperdiet pulvinar.
-        Cras efficitur sit amet ex id accumsan. Integer venenatis lacus vel
-        lorem euismod bibendum. In elementum vel ipsum in imperdiet. Donec
-        placerat viverra diam, rutrum porta nunc elementum a. In facilisis
-        faucibus turpis, nec facilisis nulla interdum vitae. Donec dignissim
-        nisl sed cursus scelerisque. Fusce in venenatis massa. Sed imperdiet
-        urna eget maximus ornare. Nulla at dui ac diam facilisis blandit.
-        Maecenas metus turpis, placerat vel tortor ac, viverra eleifend erat.
-        Quisque auctor efficitur egestas. Pellentesque sit amet semper justo, ut
-        porttitor neque. Nulla ligula dolor, posuere eget diam quis, auctor
-        fermentum arcu. Curabitur consequat molestie felis, id convallis lacus.
-        Sed a vulputate ipsum. Praesent consequat consectetur tempor. Cras et
-        leo rutrum, placerat nunc quis, tempor lacus. Pellentesque finibus in
-        ante placerat lacinia. Nam euismod, magna eu ullamcorper consectetur,
-        neque tortor tincidunt justo, consequat semper purus nisi id nunc.
-        Suspendisse lacinia, felis at blandit vestibulum, orci lectus imperdiet
-        orci, ut porta velit mi quis ligula. Donec leo felis, ultricies quis
-        cursus in, dictum sed orci. Maecenas venenatis justo lorem, in cursus
-        turpis auctor ut. Sed a bibendum velit. Integer at placerat lectus,
-        vitae tincidunt nibh. Ut in diam condimentum neque condimentum dapibus.
-        Phasellus blandit, dolor at rhoncus vestibulum, est nibh consectetur
-        velit, sit amet efficitur nisi elit pharetra ex.
-      </p>
-      <h2>P2</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempus
-        leo vel felis fringilla imperdiet. Nullam aliquam est mi, tristique
-        accumsan sem sollicitudin in. Nunc id lorem ac metus imperdiet pulvinar.
-        Cras efficitur sit amet ex id accumsan. Integer venenatis lacus vel
-        lorem euismod bibendum. In elementum vel ipsum in imperdiet. Donec
-        placerat viverra diam, rutrum porta nunc elementum a. In facilisis
-        faucibus turpis, nec facilisis nulla interdum vitae. Donec dignissim
-        nisl sed cursus scelerisque. Fusce in venenatis massa. Sed imperdiet
-        urna eget maximus ornare. Nulla at dui ac diam facilisis blandit.
-        Maecenas metus turpis, placerat vel tortor ac, viverra eleifend erat.
-        Quisque auctor efficitur egestas. Pellentesque sit amet semper justo, ut
-        porttitor neque. Nulla ligula dolor, posuere eget diam quis, auctor
-        fermentum arcu. Curabitur consequat molestie felis, id convallis lacus.
-        Sed a vulputate ipsum. Praesent consequat consectetur tempor. Cras et
-        leo rutrum, placerat nunc quis, tempor lacus. Pellentesque finibus in
-        ante placerat lacinia. Nam euismod, magna eu ullamcorper consectetur,
-        neque tortor tincidunt justo, consequat semper purus nisi id nunc.
-        Suspendisse lacinia, felis at blandit vestibulum, orci lectus imperdiet
-        orci, ut porta velit mi quis ligula. Donec leo felis, ultricies quis
-        cursus in, dictum sed orci. Maecenas venenatis justo lorem, in cursus
-        turpis auctor ut. Sed a bibendum velit. Integer at placerat lectus,
-        vitae tincidunt nibh. Ut in diam condimentum neque condimentum dapibus.
-        Phasellus blandit, dolor at rhoncus vestibulum, est nibh consectetur
-        velit, sit amet efficitur nisi elit pharetra ex.
-      </p>
-      <h3>P3</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempus
-        leo vel felis fringilla imperdiet. Nullam aliquam est mi, tristique
-        accumsan sem sollicitudin in. Nunc id lorem ac metus imperdiet pulvinar.
-        Cras efficitur sit amet ex id accumsan. Integer venenatis lacus vel
-        lorem euismod bibendum. In elementum vel ipsum in imperdiet. Donec
-        placerat viverra diam, rutrum porta nunc elementum a. In facilisis
-        faucibus turpis, nec facilisis nulla interdum vitae. Donec dignissim
-        nisl sed cursus scelerisque. Fusce in venenatis massa. Sed imperdiet
-        urna eget maximus ornare. Nulla at dui ac diam facilisis blandit.
-        Maecenas metus turpis, placerat vel tortor ac, viverra eleifend erat.
-        Quisque auctor efficitur egestas. Pellentesque sit amet semper justo, ut
-        porttitor neque. Nulla ligula dolor, posuere eget diam quis, auctor
-        fermentum arcu. Curabitur consequat molestie felis, id convallis lacus.
-        Sed a vulputate ipsum. Praesent consequat consectetur tempor. Cras et
-        leo rutrum, placerat nunc quis, tempor lacus. Pellentesque finibus in
-        ante placerat lacinia. Nam euismod, magna eu ullamcorper consectetur,
-        neque tortor tincidunt justo, consequat semper purus nisi id nunc.
-        Suspendisse lacinia, felis at blandit vestibulum, orci lectus imperdiet
-        orci, ut porta velit mi quis ligula. Donec leo felis, ultricies quis
-        cursus in, dictum sed orci. Maecenas venenatis justo lorem, in cursus
-        turpis auctor ut. Sed a bibendum velit. Integer at placerat lectus,
-        vitae tincidunt nibh. Ut in diam condimentum neque condimentum dapibus.
-        Phasellus blandit, dolor at rhoncus vestibulum, est nibh consectetur
-        velit, sit amet efficitur nisi elit pharetra ex.
-      </p>
+    <div id="project-cards">
+      <Row xs={1} md={2} className="g-4">
+        {Array.from({ length: 4 }).map((_, idx) => (
+          <Col>
+            <Card>
+              <Card.Img variant="top" src="holder.js/100px160" />
+              <Card.Body>
+                <Card.Title>Title</Card.Title>
+                <Card.Text>
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </Card.Text>
+                <Button variant="outline-secondary">Secondary</Button>{" "}
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
+      </Row>
     </div>
   );
 }
