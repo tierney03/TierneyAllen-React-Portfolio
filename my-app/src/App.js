@@ -6,17 +6,20 @@ import Navigation from "./components/navbar";
 import Projects from "./components/projects";
 import Skills from "./components/skills";
 import Contact from "./components/contact";
+import AboutMe from "./components/aboutme";
 
 function App() {
   return (
     <div className="App">
       <Navigation />
+      {/* <Container> */}
       <Header />
+      <AboutMe />
       <Projects />
-      const cards = [{},{},{},{}]
       <Skills />
       <Contact />
       <Footer />
+      {/* </Container> */}
     </div>
   );
 }
