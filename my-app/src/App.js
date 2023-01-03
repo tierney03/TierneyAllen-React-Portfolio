@@ -26,21 +26,14 @@ function App() {
     if (currentPage === "Skills") {
       return <Skills />;
     }
-    // if (currentPage === "Resume") {
-    //   return <Resume />;
-    // }
   };
+
   return (
     <div className="App">
       <Navigation />
-      {/* <Container> */}
-      <Header />
-      <AboutMe />
-      <Projects />
-      <Skills />
-      <Contact />
+      <Header setCurrentPage={setCurrentPage} />
+      {renderPage()}
       <Footer />
-      {/* </Container> */}
     </div>
   );
 }
