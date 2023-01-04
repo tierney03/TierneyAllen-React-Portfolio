@@ -9,6 +9,8 @@ import Skills from "./pages/skills";
 import Contact from "./pages/contact";
 import AboutMe from "./pages/aboutme";
 import { useState } from "react";
+import { render } from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("AboutMe");

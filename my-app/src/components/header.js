@@ -1,13 +1,20 @@
 import React, { useState } from "react";
 import Navbar from "./navbar";
-import Typewriter from "typewriter-effect/dist/core";
+// import Typewriter from "typewriter-effect/dist/core";
 
-function Header({ setCurrentPage }) {
+export default function Header() {
   return (
-    <div>
-      <h1>What is this?</h1>
-    </div>
+    <>
+      <h1>Header Page</h1>
+      <p>Tierney</p>
+    </>
   );
 }
 
-export default Header;
+// function Header({ setCurrentPage }) {
+//   return (
+//     <div>
+//       <h1>What is this?</h1>
+//     </div>
+//   );
+// }
