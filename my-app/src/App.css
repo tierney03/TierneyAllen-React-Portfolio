@@ -20,7 +20,7 @@
   }
 }
 
-/* .App-header {
+.App-header {
   background-color: olive;
   min-height: 100vh;
   display: flex;
@@ -29,11 +29,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: olive;
-} */
+}
 
-/* .nav {
-  background-color: whitesmoke;
-} */
 .App-link {
   color: #61dafb;
 }

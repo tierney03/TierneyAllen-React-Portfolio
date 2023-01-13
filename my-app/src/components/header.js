@@ -1,15 +1,5 @@
-import React, { useState } from "react";
-import Navbar from "./navbar";
-// import Typewriter from "typewriter-effect/dist/core";
-
-export default function Header() {
-  return (
-    <>
-      <h1>Header Page</h1>
-      <p>Tierney</p>
-    </>
-  );
-}
+// import React, { useState } from "react";
+// // import Typewriter from "typewriter-effect/dist/core";
 
 // function Header({ setCurrentPage }) {
 //   return (
@@ -18,3 +8,5 @@ export default function Header() {
 //     </div>
 //   );
 // }
+
+// export default Header;
